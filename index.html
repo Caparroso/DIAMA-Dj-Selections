@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diama. DJ Selections — una curaduría de DJs y sonidos para cada estado de ánimo.">
+  <meta name="theme-color" content="#090a0e">
+  <title>Diama. DJ Selections — Artistas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23ff6b32'/%3E%3Cpath d='M32 9 55 32 32 55 9 32Z' fill='%23171c31'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23ff6b32'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#artists" aria-label="Diama. DJ Selections, inicio">
+      <strong>Diama.</strong><span>DJ Selections</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Navegación principal">
+      <a href="#artists" aria-current="page">Artistas</a>
+    </nav>
+
+    <div class="filter-control">
+      <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filterPopover">
+        <span id="activeFilter">Todos los géneros</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"></path></svg>
+      </button>
+
+      <div class="filter-popover" id="filterPopover" hidden>
+        <label class="genre-search" for="genreSearch">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="genreSearch" type="search" autocomplete="off" placeholder="Buscar género" aria-label="Buscar género">
+        </label>
+        <ul class="genre-list" id="genreList"></ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="roster-page" id="artists">
+    <header class="roster-intro">
+      <div>
+        <p class="eyebrow">Diama. DJ Selections</p>
+        <h1>Artistas</h1>
+      </div>
+      <p>Una curaduría de DJs y sonidos para cada estado de ánimo. Elige el pulso de tu día o de tu noche.</p>
+    </header>
+
+    <section class="artist-grid" id="artistGrid" aria-label="Artistas de Diama"></section>
+    <p class="empty-state" id="emptyState" hidden>No hay artistas dentro de este género.</p>
+  </main>
+
+  <section class="profile-layer" id="profileLayer" aria-hidden="true" aria-label="Perfil del artista">
+    <button class="close-profile" type="button" id="closeProfile" aria-label="Cerrar perfil">×</button>
+    <div class="profile-content" role="dialog" aria-modal="true" aria-labelledby="profileName">
+      <div class="profile-photo" id="profilePhoto"></div>
+      <div class="profile-copy">
+        <p class="profile-kicker">Diama. DJ Selection</p>
+        <h2 id="profileName"></h2>
+        <p class="profile-bio" id="profileBio"></p>
+        <p class="profile-label">Géneros</p>
+        <ul class="profile-genres" id="profileGenres"></ul>
+        <p class="profile-label" id="profileSocialsLabel">Escuchar y seguir</p>
+        <ul class="social-links" id="profileSocials"></ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
