@@ -6,6 +6,7 @@ const GENRES = [
   { id: "bounce", label: "Bounce" },
   { id: "breakcore", label: "Breakcore" },
   { id: "drum-and-bass", label: "Drum & Bass" },
+  { id: "dubstep", label: "Dubstep" },
   { id: "hard-techno", label: "Hard Techno" },
   { id: "hardgroove", label: "Hard Groove" },
   { id: "hi-tech", label: "Hi Tech" },
@@ -18,12 +19,26 @@ const GENRES = [
   { id: "progressive-house", label: "Progressive House" },
   { id: "progressive-trance", label: "Progressive Trance" },
   { id: "psytrance", label: "Psytrance" },
+  { id: "riddim", label: "Riddim" },
+  { id: "speed-garage", label: "Speed Garage" },
   { id: "techno", label: "Techno" },
   { id: "trance", label: "Trance" },
   { id: "uk-garage", label: "UK Garage" }
 ];
 
 const ARTISTS = [
+  {
+    id: "andresestr3s",
+    name: "Andresestr3s",
+    genres: ["dubstep", "riddim", "hard-techno", "speed-garage", "drum-and-bass"],
+    bio: "Cuando toco, me vuelvo aquel morro de 12 años que les enseñaba a sus amigos los tracks que encontraba en YouTube, convencido de que les causarían el mismo impacto que a él. Durante el set canalizo la energía de la gente para que se sientan como los villanos protagónicos: los que siempre tienen más estilo que el héroe. En el dancefloor busco transmitir la armonía dentro del caos. Dejo que la estructura y la armonía de la música guíen la mezcla hasta ese cambio de track que protagoniza el momento.",
+    image: "assets/andresestr3s.jpg",
+    socials: [
+      { label: "Instagram", url: "https://www.instagram.com/andresestr3s?stkn=MTJwODdrZDFyYXVhYw%3D%3D&utm_source=qr", icon: "instagram" },
+      { label: "YouTube", url: "https://youtube.com/@unhombreptm?si=KNCJy1V7xK_jjB9t", icon: "play" },
+      { label: "SoundCloud", url: "https://on.soundcloud.com/ZvsQzC9NccYvFvQBwR", icon: "sound" }
+    ]
+  },
   {
     id: "caparroso",
     name: "Caparroso",
