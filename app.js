@@ -4,6 +4,7 @@ const GENRES = [
   { id: "bass", label: "Bass" },
   { id: "bass-house", label: "Bass House" },
   { id: "bounce", label: "Bounce" },
+  { id: "breakcore", label: "Breakcore" },
   { id: "drum-and-bass", label: "Drum & Bass" },
   { id: "hard-techno", label: "Hard Techno" },
   { id: "hardgroove", label: "Hard Groove" },
@@ -11,6 +12,7 @@ const GENRES = [
   { id: "house", label: "House" },
   { id: "hybrid-trap", label: "Hybrid Trap" },
   { id: "hyperpop", label: "Hyperpop" },
+  { id: "jersey-club", label: "Jersey Club" },
   { id: "latin-core", label: "Latin Core" },
   { id: "latino", label: "Latino" },
   { id: "progressive-house", label: "Progressive House" },
@@ -44,6 +46,18 @@ const ARTISTS = [
     socials: [
       { label: "Instagram", url: "https://www.instagram.com/cat.arsisdj/", icon: "instagram" },
       { label: "YouTube", url: "https://www.youtube.com/@catarsisdj6", icon: "play" }
+    ]
+  },
+  {
+    id: "firefly-light",
+    name: "Firefly Light",
+    genres: ["hyperpop", "bass", "jersey-club", "breakcore"],
+    bio: "Firefly Light es productor, compositor, DJ y cantautor. Su propuesta crea ambientes bailables y gritos melódicos, fusionando sonidos del alt-pop y la electrónica con el emo, la naturaleza y los espacios que lo rodean.",
+    image: "assets/firefly-light.jpg",
+    socials: [
+      { label: "YouTube", url: "https://www.youtube.com/@fireflylightflac", icon: "play" },
+      { label: "Instagram", url: "https://www.instagram.com/firefly_lightt/", icon: "instagram" },
+      { label: "SoundCloud", url: "https://on.soundcloud.com/GkOkkwuEiZtuL7WEQt", icon: "sound" }
     ]
   },
   {

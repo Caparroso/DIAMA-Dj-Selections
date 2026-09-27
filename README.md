@@ -35,4 +35,4 @@ Los datos están en `app.js`, dentro de la lista `ARTISTS`. Cada artista puede t
 
 Para cada foto, agrega el archivo dentro de `assets` y escribe su ruta en `image`. Las imágenes deben ser fotografías del artista, sin reutilizar el diseño de sus press kits.
 
-La biblioteca incluye actualmente a Caparroso, Cat:arsis y Kinychbeat.
+La biblioteca incluye actualmente a Caparroso, Cat:arsis, Firefly Light y Kinychbeat.
