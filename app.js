@@ -11,6 +11,7 @@ const GENRES = [
   { id: "hardgroove", label: "Hard Groove" },
   { id: "hi-tech", label: "Hi Tech" },
   { id: "house", label: "House" },
+  { id: "house-tech", label: "House Tech" },
   { id: "hybrid-trap", label: "Hybrid Trap" },
   { id: "hyperpop", label: "Hyperpop" },
   { id: "jersey-club", label: "Jersey Club" },
@@ -18,6 +19,7 @@ const GENRES = [
   { id: "latino", label: "Latino" },
   { id: "progressive-house", label: "Progressive House" },
   { id: "progressive-trance", label: "Progressive Trance" },
+  { id: "psytech", label: "Psytech" },
   { id: "psytrance", label: "Psytrance" },
   { id: "riddim", label: "Riddim" },
   { id: "speed-garage", label: "Speed Garage" },
@@ -86,6 +88,17 @@ const ARTISTS = [
       { label: "TikTok", url: "https://www.tiktok.com/@kinychbeat", icon: "music" },
       { label: "YouTube", url: "https://www.youtube.com/@kinychbeat", icon: "play" },
       { label: "SoundCloud", url: "https://soundcloud.com/kinychbeat", icon: "sound" }
+    ]
+  },
+  {
+    id: "prax",
+    name: "PRAX",
+    genres: ["hard-techno", "psytech", "house-tech", "dubstep", "bass"],
+    bio: "PRAX es una DJ mexicana originaria de Querétaro que trabaja con sonidos potentes, envolventes y emocionantes. Es productora de eventos en Messier 82 e integrante del colectivo BEATS; desde ambos proyectos ha contribuido a crear encuentros pensados para romper el dancefloor. Ha abierto pista para Magnolia Coronado y Ann García. En sus sets hard busca llevar al público al clímax sonoro, combinando hard techno, uptempo y dubstep para construir una experiencia dinámica y emocionante.",
+    image: "assets/prax.jpg",
+    socials: [
+      { label: "Instagram", url: "https://www.instagram.com/prax_ofi/", icon: "instagram" },
+      { label: "SoundCloud", url: "https://on.soundcloud.com/auPB3wRiAQmRjPPN40", icon: "sound" }
     ]
   }
 ];
