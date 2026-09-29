@@ -5,8 +5,14 @@ const GENRES = [
   { id: "bass-house", label: "Bass House" },
   { id: "bounce", label: "Bounce" },
   { id: "breakcore", label: "Breakcore" },
+  { id: "bubbling", label: "Bubbling" },
+  { id: "cumbia", label: "Cumbia" },
   { id: "drum-and-bass", label: "Drum & Bass" },
   { id: "dubstep", label: "Dubstep" },
+  { id: "footwork", label: "Footwork" },
+  { id: "funk", label: "Funk" },
+  { id: "ghettotech", label: "Ghettotech" },
+  { id: "guaracha", label: "Guaracha" },
   { id: "hard-techno", label: "Hard Techno" },
   { id: "hardgroove", label: "Hard Groove" },
   { id: "hi-tech", label: "Hi Tech" },
@@ -15,16 +21,21 @@ const GENRES = [
   { id: "hybrid-trap", label: "Hybrid Trap" },
   { id: "hyperpop", label: "Hyperpop" },
   { id: "jersey-club", label: "Jersey Club" },
+  { id: "jungle", label: "Jungle" },
+  { id: "latin-bass", label: "Latin Bass" },
   { id: "latin-core", label: "Latin Core" },
+  { id: "latineo-experimental", label: "Latineo Experimental" },
   { id: "latino", label: "Latino" },
   { id: "progressive-house", label: "Progressive House" },
   { id: "progressive-trance", label: "Progressive Trance" },
   { id: "psytech", label: "Psytech" },
   { id: "psytrance", label: "Psytrance" },
+  { id: "reggaeton", label: "Reggaeton" },
   { id: "riddim", label: "Riddim" },
   { id: "speed-garage", label: "Speed Garage" },
   { id: "techno", label: "Techno" },
   { id: "trance", label: "Trance" },
+  { id: "tribal", label: "Tribal" },
   { id: "uk-garage", label: "UK Garage" }
 ];
 
@@ -88,6 +99,18 @@ const ARTISTS = [
       { label: "TikTok", url: "https://www.tiktok.com/@kinychbeat", icon: "music" },
       { label: "YouTube", url: "https://www.youtube.com/@kinychbeat", icon: "play" },
       { label: "SoundCloud", url: "https://soundcloud.com/kinychbeat", icon: "sound" }
+    ]
+  },
+  {
+    id: "n4tura",
+    name: "n4tura",
+    genres: ["latin-bass", "footwork", "tribal", "jungle", "ghettotech", "jersey-club", "drum-and-bass", "latineo-experimental", "bubbling", "ambient", "funk", "cumbia", "reggaeton", "guaracha"],
+    bio: "n4tura es unx DJ y artista multidisciplinaria nacida y residente en Querétaro, México. Su práctica explora las posibilidades del sonido a través del juego, la intuición, el contraste y la experimentación, conectando sonidos contemporáneos con memorias y resonancias ancestrales. Su investigación atraviesa percusiones hipnóticas, bajos latinos, bubbling, breaks y paisajes ambient, con una energía juguetona, profunda y sensual. Comenzó a mezclar en Milán, Italia, mientras estudiaba Artes Audiovisuales, tocando en contextos migrantes y fiestas clandestinas; actualmente desarrolla su práctica dentro de la escena underground mexicana.",
+    image: "assets/n4tura.jpg",
+    socials: [
+      { label: "Instagram", url: "https://www.instagram.com/n4turaaaa/", icon: "instagram" },
+      { label: "SoundCloud", url: "https://soundcloud.com/n4turaaaa", icon: "sound" },
+      { label: "Beacons", url: "https://beacons.ai/n4tura", icon: "web" }
     ]
   },
   {

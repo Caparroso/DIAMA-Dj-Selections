@@ -136,6 +136,7 @@ button, a, input { -webkit-tap-highlight-color: transparent; }
 .artist-tile[data-artist="andresestr3s"] img { object-position: 50% 42%; }
 .artist-tile[data-artist="firefly-light"] img { object-position: 50% 48%; }
 .artist-tile[data-artist="kinychbeat"] img { object-position: 63% center; }
+.artist-tile[data-artist="n4tura"] img { object-position: 50% 54%; }
 .artist-tile::before { position: absolute; inset: 0; z-index: -1; content: ""; background: linear-gradient(180deg, rgba(7,8,12,.08) 20%, rgba(7,8,12,.25) 58%, rgba(7,8,12,.9) 100%); transition: background .35s ease; }
 .tile-index { position: absolute; top: 1rem; left: 1rem; color: rgba(238, 228, 223, .74); font-size: .68rem; font-weight: 760; letter-spacing: .12em; }
 .tile-copy { position: absolute; right: 1.1rem; bottom: 1.15rem; left: 1.1rem; text-align: center; transform: translateY(1.55rem); transition: transform .48s cubic-bezier(.16, 1, .3, 1); }
@@ -155,6 +156,7 @@ button, a, input { -webkit-tap-highlight-color: transparent; }
 .profile-photo[data-artist="andresestr3s"] img { object-position: 50% 42%; }
 .profile-photo[data-artist="firefly-light"] img { object-position: 50% 48%; }
 .profile-photo[data-artist="kinychbeat"] img { object-position: 63% center; }
+.profile-photo[data-artist="n4tura"] img { object-position: 50% 54%; }
 .profile-copy { min-width: 0; }
 .profile-kicker { margin: 0 0 .65rem; color: var(--orange); font-size: .72rem; font-weight: 760; letter-spacing: .13em; text-transform: uppercase; }
 .profile-copy h2 { margin: 0; font-size: clamp(3.4rem, 8vw, 7rem); font-weight: 650; line-height: .85; letter-spacing: -.07em; }
