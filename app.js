@@ -16,20 +16,24 @@ const GENRES = [
   { id: "hard-techno", label: "Hard Techno" },
   { id: "hardgroove", label: "Hard Groove" },
   { id: "hi-tech", label: "Hi Tech" },
+  { id: "hip-hop", label: "Hip-Hop" },
   { id: "house", label: "House" },
   { id: "house-tech", label: "House Tech" },
   { id: "hybrid-trap", label: "Hybrid Trap" },
   { id: "hyperpop", label: "Hyperpop" },
+  { id: "idm", label: "IDM" },
   { id: "jersey-club", label: "Jersey Club" },
   { id: "jungle", label: "Jungle" },
   { id: "latin-bass", label: "Latin Bass" },
   { id: "latin-core", label: "Latin Core" },
   { id: "latineo-experimental", label: "Latineo Experimental" },
   { id: "latino", label: "Latino" },
+  { id: "pop-en-espanol", label: "Pop en español" },
   { id: "progressive-house", label: "Progressive House" },
   { id: "progressive-trance", label: "Progressive Trance" },
   { id: "psytech", label: "Psytech" },
   { id: "psytrance", label: "Psytrance" },
+  { id: "r-and-b", label: "R&B" },
   { id: "reggaeton", label: "Reggaeton" },
   { id: "riddim", label: "Riddim" },
   { id: "speed-garage", label: "Speed Garage" },
@@ -50,6 +54,17 @@ const ARTISTS = [
       { label: "Instagram", url: "https://www.instagram.com/andresestr3s?stkn=MTJwODdrZDFyYXVhYw%3D%3D&utm_source=qr", icon: "instagram" },
       { label: "YouTube", url: "https://youtube.com/@unhombreptm?si=KNCJy1V7xK_jjB9t", icon: "play" },
       { label: "SoundCloud", url: "https://on.soundcloud.com/ZvsQzC9NccYvFvQBwR", icon: "sound" }
+    ]
+  },
+  {
+    id: "binkan",
+    name: "Binkan",
+    genres: ["hip-hop", "idm", "r-and-b", "pop-en-espanol"],
+    bio: "Binkan —antes Rayo Adentro— es productor, compositor y artista multidisciplinario de la Ciudad de México, con más de diez años de experiencia en producción musical y ocho de trayectoria en vivo. Su proyecto parte del diseño sonoro, combinando texturas orgánicas y digitales con una lírica influenciada por la literatura hispánica, la metáfora y el realismo mágico. Entre hip-hop, IDM, R&B y pop en español construye un universo híbrido donde la experimentación convive con una fuerte sensibilidad narrativa y emocional. Su propuesta abarca live set y DJ set, con presentaciones en México y Estados Unidos, incluyendo The Lot Radio y FOOD en Nueva York. En 2026 publicó REFLEX.IO y prepara INFLEX.IO; también forma parte de Nuevos Eyes! y del colectivo audiovisual opsion.b.",
+    image: "assets/binkan.jpg",
+    socials: [
+      { label: "Instagram", url: "https://www.instagram.com/binkanbinkanbinkan/", icon: "instagram" },
+      { label: "Contacto", url: "mailto:rayoadentro@gmail.com", icon: "mail" }
     ]
   },
   {
@@ -132,7 +147,8 @@ const ICONS = {
   music: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18V5l10-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="16" cy="16" r="3"></circle></svg>',
   sound: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 14v-4m4 7V7m4 12V5m4 12V7m4 7v-4"></path></svg>',
   bandcamp: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7.5 7h13l-4 10h-13Z"></path></svg>',
-  web: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3Z"></path></svg>'
+  web: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3Z"></path></svg>',
+  mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>'
 };
 
 const state = { genre: "all", genreQuery: "" };
